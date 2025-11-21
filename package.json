@@ -4,6 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"postinstall": "node scripts/copy-ffmpeg.js",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -31,5 +32,11 @@
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.46.1",
 		"vite": "^7.1.10"
+	},
+	"dependencies": {
+		"@ffmpeg/core": "^0.12.10",
+		"@ffmpeg/ffmpeg": "^0.12.15",
+		"@ffmpeg/util": "^0.12.2",
+		"html2canvas": "^1.4.1"
 	}
 }
